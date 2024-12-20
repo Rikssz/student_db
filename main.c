@@ -47,7 +47,7 @@ int main() {
 		printf("Saving data to %s ...\n", file);
 		err = data_save( c, s, file );
 		if ( err ) {
-			printf("Error saving datta: %d(%m)\n", err);
+			printf("Error saving data: %d(%m)\n", err);
 		}
 	}
 
