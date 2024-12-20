@@ -33,7 +33,7 @@ int main() {
 		return 0;
 	}
 
-	printf("Please enter number of students: ");
+	printf("Please enter number of students:\n");
 	scanf("%d", &c);
 
 	s = (struct student *)malloc( sizeof(struct student) * c );
@@ -41,13 +41,13 @@ int main() {
 	data_input( c, s );
 	data_output( c, s );
 
-	printf("Do you want to save the data(1/0)?");
+	printf("Do you want to save the data(1/0)?\n");
 	scanf("%d", &yn);
 	if ( yn == 1 ) {
 		printf("Saving data to %s ...\n", file);
 		err = data_save( c, s, file );
 		if ( err ) {
-			printf("Error saving data: %d(%m)\n", err);
+			printf("Error saving datta: %d(%m)\n", err);
 		}
 	}
 
